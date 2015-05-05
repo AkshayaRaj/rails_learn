@@ -36,6 +36,7 @@ group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
   gem 'debugger'
 
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
@@ -43,3 +44,7 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor', '0.0.2'
+end
